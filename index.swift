@@ -10,7 +10,14 @@ func countBits(_ n: Int) -> Int {
     let num = n
     let str = String(num, radix: 2)
     print(str) // prints "10110"
-    
+    for number in str{
+        
+        guard let nu = Int(String(number)) else { return 1 }
+        if nu == 1{
+            count = count + 1
+            print("number is equal to 1")
+        }
+    }
     print(count)
     return count
 }
