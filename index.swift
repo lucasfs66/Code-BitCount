@@ -6,7 +6,13 @@
 
 func countBits(_ n: Int) -> Int {
   // Show me the code!
-  
+    var count: Int = 0
+    let num = n
+    let str = String(num, radix: 2)
+    print(str) // prints "10110"
+    
+    print(count)
+    return count
 }
 
 countBits(1234);
